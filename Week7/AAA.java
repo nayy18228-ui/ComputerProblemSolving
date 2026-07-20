@@ -3,7 +3,6 @@ void main() {
     int number = Integer.parseInt(IO.readln());
 
     if (number == 1) {
-        // กรณีเลือก 1: คำนวณพื้นที่สามเหลี่ยม
         IO.print("Enter the base of the triangle: ");
         double base = Double.parseDouble(IO.readln());
 
@@ -14,7 +13,6 @@ void main() {
         IO.println("Area of the triangle: " + area + " square units");
 
     } else if (number == 2) {
-        // กรณีเลือก 2: คำนวณค่า BMI
         IO.print("Enter your weight in kilograms: ");
         double weight = Double.parseDouble(IO.readln());
 
