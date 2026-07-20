@@ -1,0 +1,27 @@
+void main() {
+    IO.print("Enter a number: ");
+    int number = Integer.parseInt(IO.readln());
+
+    if (number == 1) {
+        // กรณีเลือก 1: คำนวณพื้นที่สามเหลี่ยม
+        IO.print("Enter the base of the triangle: ");
+        double base = Double.parseDouble(IO.readln());
+
+        IO.print("Enter the height of the triangle: ");
+        double height = Double.parseDouble(IO.readln());
+
+        double area = 0.5 * base * height;
+        IO.println("Area of the triangle: " + area + " square units");
+
+    } else if (number == 2) {
+        // กรณีเลือก 2: คำนวณค่า BMI
+        IO.print("Enter your weight in kilograms: ");
+        double weight = Double.parseDouble(IO.readln());
+
+        IO.print("Enter your height in meters: ");
+        double height = Double.parseDouble(IO.readln());
+
+        double bmi = weight / (height * height);
+        IO.println("Your BMI for weight = " + weight + " kg and height = " + height + " meters is: " + bmi + " bmi.");
+    }
+}
